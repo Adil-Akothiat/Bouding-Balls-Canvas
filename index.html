@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border;
+        }
+        body  {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        canvas {
+            background-color: #232323;
+        }
+        .controle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 20px;
+        }
+        .controle label {
+            display: block;
+        }
+    </style>
+    <div class="controle">
+        <h1>Click On The Screen To Create More Balls</h1>
+        <div>
+            <label>
+                Ball Size : 
+            </label>
+            <input type="range" id="size" value="12" max="50">
+        </div>
+        <div>
+            <label>
+                Ball Speed : 
+            </label>
+            <input type="range" id="speed" value="10" max="30">
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+</body>
+</html>
